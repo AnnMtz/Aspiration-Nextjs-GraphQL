@@ -1,4 +1,3 @@
-// import axios from "axios";
 import { QUERY } from "./schema";
 import { graphqlAPI, token } from "./config";
 import {
