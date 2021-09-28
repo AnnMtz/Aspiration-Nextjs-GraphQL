@@ -15,17 +15,3 @@ function Home() {
 }
 
 export default Home;
-
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(
-//   <ApolloProvider></ApolloProvider>
-// )
-// export default function Home() {
-//   return (
-//     <div>
-//       <Layout>
-//         <H1styled>Inicio</H1styled>
-//       </Layout>
-//     </div>
-//   )
-// }
