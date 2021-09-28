@@ -9,7 +9,7 @@ const HeaderStyle = styled.div`
     margin-bottom: 5rem;
 `;
 
-const DivStyle = styled.div`
+const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,18 +17,13 @@ const DivStyle = styled.div`
     margin: 0rem 4rem 4rem 4rem;
 `;
 
-const H1Styles = styled.h1`
-    margin-top: 50px;
-    color: rebeccapurple;
-`;
-
 function Header() {
     return ( 
         <HeaderStyle>
-            <DivStyle>
+            <Container>
                 <TextVariant />
                 <Nav />
-            </DivStyle>
+            </Container>
         </HeaderStyle>
      );
 }
