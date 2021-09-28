@@ -30,5 +30,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## APP
 
+<img width="1444" alt="Screen Shot 2021-09-28 at 13 56 51" src="https://user-images.githubusercontent.com/49168661/135148913-b64856d9-f609-48be-860d-5a33f871df68.png">
+
+
 <img width="1443" alt="Screen Shot 2021-09-28 at 13 39 29" src="https://user-images.githubusercontent.com/49168661/135147398-9f245011-1102-4142-9f9d-818198bec62f.png">
 
