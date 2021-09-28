@@ -1,9 +1,42 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY } from '../pages/api/schema';
-import { client } from '../pages/api/getInfo';
-// import { query } from '../pages/api/schema';
-// import { FaStart } from 'react-icon'
+import styled from 'styled-components';
+import { FaStar } from 'react-icons/fa';
+
+const TableStyle = styled.table`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+const TbodyStyles = styled.tbody`
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    width: 26%;
+`;
+
+const TrStyles = styled.tr`
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 9px;
+    color: darkblue;
+`;
+
+const TdStyles = styled.td`
+    width: 83%;
+    font-size: 18px;
+    font-style: oblique;
+`;
+
+const Start = styled.td`
+    color: gold;
+`;
 
 function Table() {
     const { loading, error, data } = useQuery(QUERY);
@@ -12,25 +45,26 @@ function Table() {
     if (error) return <p>Error :(</p>;
 
             return (
-                <table>
-                    <tbody>
-                        <tr>
+                <TableStyle>
+                    <TbodyStyles>
+                        <TrStyles>
                             <th>Name</th>
                             <th>Starts</th>
-                        </tr>
+                        </TrStyles>
                         <tr key={data.topic.id}>
-                            <td>{data.topic.name}</td>
-                            <td>{data.topic.stargazerCount}</td>
+                            <TdStyles>{data.topic.name}</TdStyles>
+                            <TdStyles>{data.topic.stargazerCount}</TdStyles>
+                            <Start><FaStar css={`color: golden;`}/></Start>
                             {data.topic.relatedTopics?.map((item) => (
                                 <tr key={item.id}>
-                                    <td>{item.name}</td>
-                                    <td>{item.stargazerCount}</td>
+                                    <TdStyles>{item.name}</TdStyles>
+                                    <TdStyles>{item.stargazerCount}</TdStyles>
+                                    <Start><FaStar css={`color: golden;`}/></Start>
                                 </tr>
                             ))}
-                            {/* <td><FaStar css={`color: golden;`}/></td> */}
                         </tr>
-                    </tbody>
-                </table>
+                    </TbodyStyles>
+                </TableStyle>
             )
     
 }

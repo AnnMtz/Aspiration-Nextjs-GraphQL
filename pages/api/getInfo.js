@@ -19,7 +19,8 @@ export const client = new ApolloClient({
     uri: graphqlAPI,
     cache: new InMemoryCache(),
     headers: {
-        Authorization: "bearer " + token
+        Authorization: `bearer ${token}`
     }
 });
+console.log(token);
 console.log(graphqlAPI);

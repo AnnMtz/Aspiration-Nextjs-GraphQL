@@ -9,7 +9,6 @@ const Layout = (props) => {
             <main>
                 {props.children}
             </main>
-            <Table/>
         </>
      );
 }
