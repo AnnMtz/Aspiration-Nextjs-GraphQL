@@ -1,3 +1,2 @@
 export const graphqlAPI = "https://api.github.com/graphql";
-export const token = "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";
-// export const oauth = { Authorization: "bearer " };
+export const token = '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';

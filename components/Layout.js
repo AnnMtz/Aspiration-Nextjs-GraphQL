@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import Table from './Table';
+import styled from 'styled-components';
+
 
 const Layout = (props) => {
     return (

@@ -3,16 +3,18 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const NavStyles = styled.nav`
-    margin-top: 18px;
+    margin-top: 24px;
     width: 8rem;
     display: flex;
     justify-content: space-evenly;
-    font-size: 20px;
+    color: rebeccapurple;
+    font-size: 22px;
 `;
 
 const LinkStyle = styled.a`
+    margin-right: 20px;
     &hover {
-        cursor: pointer
+        cursor: pointer;
     }
 `;
 

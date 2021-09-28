@@ -3,8 +3,9 @@ import Nav from '../features/Nav';
 import styled from 'styled-components';
 
 const HeaderStyle = styled.div`
-    background-color: lightgrey
-    // padding-bottom: 4rem;
+    background-color: #9ab3e1c2;
+    padding-bottom: 26px;
+    margin-bottom: 5rem;
 `;
 
 const DivStyle = styled.div`
@@ -15,11 +16,16 @@ const DivStyle = styled.div`
     margin: 0rem 4rem 4rem 4rem;
 `;
 
+const H1Styles = styled.h1`
+    margin-top: 50px;
+    color: rebeccapurple;
+`;
+
 function Header() {
     return ( 
         <HeaderStyle>
             <DivStyle>
-                <h1>GITHUB GRAPHQL</h1>
+                <H1Styles>GITHUB GRAPHQL</H1Styles>
                 <Nav />
             </DivStyle>
         </HeaderStyle>

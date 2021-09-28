@@ -6,15 +6,6 @@ import {
     InMemoryCache
 } from '@apollo/client';
 
-// export const getInfo = async () => {
-//     const result = await axios.post(
-//         graphqlAPI,
-//         { query: query },
-//         { headers: oauth }
-//     )
-//     return result.data;
-// }
-
 export const client = new ApolloClient({
     uri: graphqlAPI,
     cache: new InMemoryCache(),
@@ -22,5 +13,3 @@ export const client = new ApolloClient({
         Authorization: `bearer ${token}`
     }
 });
-console.log(token);
-console.log(graphqlAPI);
