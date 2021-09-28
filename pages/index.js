@@ -23,7 +23,6 @@ function Home() {
       <BlockquoteStyles>
           Here you can view all the topics related to React, just click on the menu TOPICS at the header
       </BlockquoteStyles>
-        {/* <img src="/react.png" alt="react image" css={`width: 50%;`}/> */}
         <ImageStyles>
           <Image src={Logo} alt="react image"/>
         </ImageStyles>
