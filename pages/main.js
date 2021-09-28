@@ -4,7 +4,7 @@ import { client } from './api/getInfo';
 import { ApolloProvider } from '@apollo/client';
 import Table from '../components/Table';
 
-function Home() {
+function Main() {
   return(
     <ApolloProvider client={client}>
         <Layout>
@@ -14,4 +14,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Main;
