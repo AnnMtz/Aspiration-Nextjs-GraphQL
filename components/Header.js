@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../features/Nav';
 import styled from 'styled-components';
+import TextVariant from '../features/Text';
 
 const HeaderStyle = styled.div`
     background-color: #9ab3e1c2;
@@ -25,7 +26,7 @@ function Header() {
     return ( 
         <HeaderStyle>
             <DivStyle>
-                <H1Styles>GITHUB GRAPHQL</H1Styles>
+                <TextVariant />
                 <Nav />
             </DivStyle>
         </HeaderStyle>

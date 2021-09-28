@@ -13,16 +13,14 @@ const NavStyles = styled.nav`
 
 const LinkStyle = styled.a`
     margin-right: 20px;
-    &hover {
-        cursor: pointer;
-    }
+    text-decoration: none;
 `;
 
 function Nav() {
     return ( 
         <NavStyles>
-            <LinkStyle><Link href="/">Home</Link></LinkStyle>
-            <LinkStyle><Link href="/main">Topics</Link></LinkStyle>
+            <Link href="/"><LinkStyle>Home</LinkStyle></Link>
+            <Link href="/main"><LinkStyle>Topics</LinkStyle></Link>
         </NavStyles>
      );
 }

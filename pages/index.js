@@ -15,20 +15,27 @@ const BlockquoteStyles = styled.blockquote`
     text-align: center;
     font-weight: 800;
 `;
+
+const Body = styled.body`
+  margin: 0;
+`;
+
 function Home() {
   return(
-    <ApolloProvider client={client}>
-        <Layout>
-    <div>
-      <BlockquoteStyles>
-          Here you can view all the topics related to React, just click on the menu TOPICS at the header
-      </BlockquoteStyles>
-        <ImageStyles>
-          <Image src={Logo} alt="react image"/>
-        </ImageStyles>
-    </div>
-        </Layout>
-    </ApolloProvider>
+    <Body>
+        <ApolloProvider client={client}>
+            <Layout>
+        <div>
+          <BlockquoteStyles>
+              Here you can view all the topics related to React, just click on the menu TOPICS at the header
+          </BlockquoteStyles>
+            <ImageStyles>
+              <Image src={Logo} alt="react image"/>
+            </ImageStyles>
+        </div>
+            </Layout>
+        </ApolloProvider>
+    </Body>
   )
 }
 
