@@ -1,8 +1,8 @@
-import Layout from '../components/Layout'
+import Layout from '../components/commons/Layout';
 import styled from '@emotion/styled'
-import { client } from './api/getInfo';
+import { client } from '../config/getInfo';
 import { ApolloProvider } from '@apollo/client';
-import Table from '../components/Table';
+import Table from '../components/commons/Table';
 
 function Main() {
   return(
