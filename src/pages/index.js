@@ -2,7 +2,7 @@ import Layout from "../components/commons/Layout";
 import styled from "@emotion/styled";
 import { client } from "../config/getInfo";
 import { ApolloProvider } from "@apollo/client";
-import Logo from "../../images/react.png";
+import Logo from '../../images/react.png';
 import Image from "next/image";
 
 const ImageStyles = styled.div`

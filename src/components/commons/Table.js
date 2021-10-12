@@ -3,7 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 import { QUERY } from "../../config/schema";
 import styled from "styled-components";
 import { FaStar } from "react-icons/fa";
-import { client } from "../../config/getInfo";
+
 
 const TableStyle = styled.table`
   display: flex;
@@ -42,24 +42,9 @@ const Start = styled.td`
 function Table() {
   const { loading, error, data } = useQuery(QUERY);
 
-  useEffect(() => {
-    async () => {
-      const m = client.query({
-        query: gql`
-          query GetRates {
-            rates(currency: "USD") {
-              currency
-            }
-          }
-        `,
-      });
-      console.log("m useEffect", m);
-    };
-  });
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
-  console.log("call site", my_newShit);
+
   return (
     <TableStyle>
       <TbodyStyles>

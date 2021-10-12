@@ -8,7 +8,7 @@ const TextStyles = styled.h1`
 const TextVariant = () => {
   return (
     <TextStyles>
-      GITHUB GRAPHQL env{process.env.NEXT_PUBLIC_APP_API_KEY}
+      GITHUB GRAPHQL
     </TextStyles>
   );
 };
