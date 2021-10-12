@@ -9,7 +9,6 @@ npm run dev
 # or
 yarn dev
 ```
-To run the app you need to create your own PERSONAL ACCESS TOKEN and then added to the variable const token at the config.js component.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
